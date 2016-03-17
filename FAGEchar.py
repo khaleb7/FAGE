@@ -256,7 +256,165 @@ def character_class():
                 c_class="Rogue"
         return c_class
 
+def Mage():
+        global c_name
+        global c_stats
+        global c_focus
+        global c_talent
+        global c_language
+        global c_class
+        
+def Rogue():
+        global c_name
+        global c_stats
+        global c_focus
+        global c_talent
+        global c_language
+        global c_class
 
+def Warrior():
+        global c_name
+        global c_stats
+        global c_focus
+        global c_talent
+        global c_language
+        global c_class
+
+def character_background():
+        global c_name
+        global c_stats
+        global c_focus
+        global c_talent
+        global c_language
+        global c_class
+        global c_social
+        rollera = random.randint(1,6)
+        rollerb = random.randint(1,6)
+
+        if rollera == 1:
+                c_social = "Outsider"
+                if rollerb == 1:
+                      c_social = c_social + ": Criminal"
+                      s_focus = random.choice(["Communication(Deception)","Dexterity(Lockpicking)"])
+                      c_focus.append(s_focus)
+                elif rollerb == 2:
+                      c_social = c_social + ": Exile"
+                      s_focus = random.choice(["Communication(Bargaining)","Intelligence(Cultural Lore)"])
+                      c_focus.append(s_focus)
+                elif rollerb == 3:
+                      c_social = c_social + ": Hermit"
+                      s_focus = random.choice(["Constitution(Stamina)","Willpower(Self-Discipline)"])
+                      c_focus.append(s_focus)
+                elif rollerb == 4:
+                      c_social = c_social + ": Pirate"
+                      s_focus = random.choice(["Dexterity(Sailing)","Strength(Intimidation)"])
+                      c_focus.append(s_focus)
+                elif rollerb == 5:
+                      c_social = c_social + ": Radical"
+                      s_focus = random.choice(["Communication(Persuasion)","Communication(Leadership)"])
+                      c_focus.append(s_focus)
+                elif rollerb == 6:
+                      c_social = c_social + ": Wanderer"
+                      s_focus = random.choice(["Constitution(Stamina)","Intelligence(Navigation)"])
+                      c_focus.append(s_focus)
+                else:
+                        print "Error Handling Here"
+
+        elif rollera == 2 or rollera == 3:
+                c_social = "Lower Class"
+                if rollerb == 1:
+                      c_social = c_social + ": Artist"
+                      s_focus = random.choice(["Intelligence(Cultural Lore)","Intelligence(Evaluation)"])
+                      c_focus.append(s_focus)
+                elif rollerb == 2:
+                      c_social = c_social + ": Laborer"
+                      s_focus = random.choice(["Constitution(Stamina)","Strength(Might)"])
+                      c_focus.append(s_focus)
+                elif rollerb == 3:
+                      c_social = c_social + ": Performer"
+                      s_focus = random.choice(["Communication(Performance)","Intelligence(Musical Lore)"])
+                      c_focus.append(s_focus)
+                elif rollerb == 4:
+                      c_social = c_social + ": Sailor"
+                      s_focus = random.choice(["Constitution(Drinking)","Dexterity(Sailing)"])
+                      c_focus.append(s_focus)
+                elif rollerb == 5:
+                      c_social = c_social + ": Soldier"
+                      s_focus = random.choice(["Accuracy(Brawling)","Communication(Gambling)"])
+                      c_focus.append(s_focus)
+                elif rollerb == 6:
+                      c_social = c_social + ": Tradesperson"
+                      s_focus = random.choice(["Communication(Bargaining)","Intelligence(Evaluation)"])
+                      c_focus.append(s_focus)
+                else:
+                        print "Error Handling Here"
+
+        elif rollera == 4 or rollera == 5:
+                c_social = "Middle Class"
+                if rollerb == 1:
+                      c_social = c_social + ": Guilder"
+                      s_focus = random.choice(["Communication(Etiquette)","Dexterity(Crafting)"])
+                      c_focus.append(s_focus)
+                elif rollerb == 2:
+                      c_social = c_social + ": Initiate"
+                      s_focus = random.choice(["Intelligence(Religious Lore)","Willpower(Faith)"])
+                      c_focus.append(s_focus)
+                elif rollerb == 3:
+                      c_social = c_social + ": Innkeeper"
+                      s_focus = random.choice(["Communication(Bargaining)","Perception(Empathy)"])
+                      c_focus.append(s_focus)
+                elif rollerb == 4:
+                      c_social = c_social + ": Merchant"
+                      s_focus = random.choice(["Communication(Bargaining)","Communication(Deception)"])
+                      c_focus.append(s_focus)
+                elif rollerb == 5:
+                      c_social = c_social + ": Scribe"
+                      s_focus = random.choice(["Dexterity(Calligraphy)","Intelligence(Writing)"])
+                      c_focus.append(s_focus)
+                elif rollerb == 6:
+                      c_social = c_social + ": Student"
+                      s_focus = random.choice(["Intelligence(Historical Lore)","Intelligence(Research)"])
+                      c_focus.append(s_focus)
+                else:
+                        print "Error Handling Here"
+
+        elif rollera == 6:
+                c_social = "Upper Class"
+                if rollerb == 1:
+                      c_social = c_social + ": Apprentice"
+                      s_focus = random.choice(["Intelligence(Arcane Lore)","Intelligence(Research)"])
+                      c_focus.append(s_focus)
+                elif rollerb == 2:
+                      c_social = c_social + ": Dilettante"
+                      s_focus = random.choice(["Communication(Gambling)","Constitution(Drinking)"])
+                      c_focus.append(s_focus)
+                elif rollerb == 3:
+                      c_social = c_social + ": Noble"
+                      s_focus = random.choice(["Communication(Etiquette)","Intelligence(Heraldry)"])
+                      c_focus.append(s_focus)
+                elif rollerb == 4:
+                      c_social = c_social + ": Official"
+                      s_focus = random.choice(["Communication(Leadership)","Communication(Persuasion)"])
+                      c_focus.append(s_focus)
+                elif rollerb == 5:
+                      c_social = c_social + ": Scholar"
+                      s_focus = random.choice(["Intelligence(Religious Lore)","Intelligence(Historical Lore)"])
+                      c_focus.append(s_focus)
+                elif rollerb == 6:
+                      c_social = c_social + ": Squire"
+                      s_focus = random.choice(["Intelligence(Heraldry)","Intelligence(Military Lore)"])
+                      c_focus.append(s_focus)
+                else:
+                        print "Error Handling Here"
+
+                        
+        else:
+                print "Nothing"
+
+        return c_social
+      
+
+                                       
 def character_assemble():
         global c_name
         global c_stats
@@ -265,18 +423,23 @@ def character_assemble():
         global c_language
         global c_class
         global c_race
+        global c_social
         c_focus = []
         c_talent = []
         c_language = []
         c_stats = [charattr(),charattr(),charattr(),charattr(),charattr(),charattr(),charattr(),charattr(),charattr(),0,0,0,0,0]
         c_class = character_class()
         c_race = character_race()
-        func=getattr(sys.modules[__name__], c_race)
-        func()
+        ra_func=getattr(sys.modules[__name__], c_race)
+        cl_func=getattr(sys.modules[__name__], c_class)
+        ra_func()
+        cl_func()
+        c_social = character_background()
         #Only Orcs work currently. Ideally we break out race definitions into seperate modules.
         print c_name
         print c_race
         print c_class
+        print c_social
         print (c_stats)
         print (c_focus)
         print (c_talent) 
