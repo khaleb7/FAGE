@@ -1,7 +1,7 @@
 #!/usr/bin/python
 import random 
 import sys
-#Added Dwarves
+#Added Elves
 
 
 def charattr():
@@ -17,7 +17,7 @@ def twodsix():
 
 def character_race():
         race = ["Orc","Human","Elf","Halfling","Dwarf","Gnome"]
-        racenum = [0,4]
+        racenum = [0,2,4,5]
         racechoicenum = random.choice(racenum)
         racechoice = race[racechoicenum]
         c_race = racechoice
@@ -52,15 +52,14 @@ def race_benefits():
                                  #print "1 and Orc"
                                  c_stats[2] = c_stats[2] +1
                          elif c_race == "Elf":
-                                 print "1 and Elf"
+                                 c_stats[1] = c_stats[1] +1
                          elif c_race == "Human":
                                  print "1 and Human"
                          elif c_race == "Halfling":
                                  print "1 and Halfling"
                                  #WTF do people play Halflings?
                          elif c_race == "Gnome":
-                                 print "1 and Gnome"
-                                 #Gnomes are fugly Halflings
+                                 c_stats[2] = c_stats[2] +1
                          elif c_race == "Dwarf":
                                  c_stats[8] = c_stats[8] +1
                          else:
@@ -70,15 +69,15 @@ def race_benefits():
                                  #print "1 and Orc"
                                  c_focus.append("Perception(Smelling)")
                          elif c_race == "Elf":
-                                 print "1 and Elf"
+                                 c_focus.append("Intelligence(Cultural Lore)")
                          elif c_race == "Human":
                                  print "1 and Human"
                          elif c_race == "Halfling":
                                  print "1 and Halfling"
                                  #WTF do people play Halflings?
                          elif c_race == "Gnome":
-                                 print "1 and Gnome"
-                                 #Gnomes are fugly Halflings
+                                 c_focus.append("Dexterity(Traps)")
+                                 
                          elif c_race == "Dwarf":
                                  c_focus.append("Intelligence(Historical Lore)")
                          else:
@@ -89,15 +88,14 @@ def race_benefits():
                                  #print "1 and Orc"
                                  c_focus.append("Dexterity(Stealth)")
                          elif c_race == "Elf":
-                                 print "1 and Elf"
+                                 c_focus.append("Perception(Hearing)")
                          elif c_race == "Human":
                                  print "1 and Human"
                          elif c_race == "Halfling":
                                  print "1 and Halfling"
                                  #WTF do people play Halflings?
                          elif c_race == "Gnome":
-                                 print "1 and Gnome"
-                                 #Gnomes are fugly Halflings
+                                 c_focus.append("Intelligence(Evaluation)")
                          elif c_race == "Dwarf":
                                  c_focus.append("Constitution(Stamina)")
                          else:
@@ -108,15 +106,14 @@ def race_benefits():
                                  #print "1 and Orc"
                                  c_focus.append("Strength(Intimidation)")
                          elif c_race == "Elf":
-                                 print "1 and Elf"
+                                 c_focus.append("Weapon Group or Focus(Bows)")
                          elif c_race == "Human":
                                  print "1 and Human"
                          elif c_race == "Halfling":
                                  print "1 and Halfling"
                                  #WTF do people play Halflings?
                          elif c_race == "Gnome":
-                                 print "1 and Gnome"
-                                 #Gnomes are fugly Halflings
+                                 c_focus.append("Perception(Hearing)")
                          elif c_race == "Dwarf":
                                  c_focus.append("Weapon Group or Focus(Axes)")
                          else:
@@ -127,15 +124,14 @@ def race_benefits():
                                  #print "1 and Orc"
                                  c_stats[4] = c_stats[4] +1
                          elif c_race == "Elf":
-                                 print "1 and Elf"
+                                 c_stats[0] = c_stats[0] +1
                          elif c_race == "Human":
                                  print "1 and Human"
                          elif c_race == "Halfling":
                                  print "1 and Halfling"
                                  #WTF do people play Halflings?
                          elif c_race == "Gnome":
-                                 print "1 and Gnome"
-                                 #Gnomes are fugly Halflings
+                                 c_stats[8] = c_stats[8] +1
                          elif c_race == "Dwarf":
                                  c_stats[4] = c_stats[4] +1
                          else:
@@ -146,15 +142,14 @@ def race_benefits():
                                  #print "1 and Orc"
                                  c_focus.append("Weapon Group or Focus(Bludgeons)")
                          elif c_race == "Elf":
-                                 print "1 and Elf"
+                                 c_focus.append("Dexterity(Initiative)")
                          elif c_race == "Human":
                                  print "1 and Human"
                          elif c_race == "Halfling":
                                  print "1 and Halfling"
                                  #WTF do people play Halflings?
                          elif c_race == "Gnome":
-                                 print "1 and Gnome"
-                                 #Gnomes are fugly Halflings
+                                 c_focus.append("Intelligence(Arcane Lore)")
                          elif c_race == "Dwarf":
                                  c_focus.append("Strength(Smithing)")
                          else:
@@ -165,15 +160,14 @@ def race_benefits():
                                  #print "1 and Orc"
                                  c_focus.append("Accuracy(Brawling)")
                          elif c_race == "Elf":
-                                 print "1 and Elf"
+                                 c_focus.append("Communication(Persuasion)")
                          elif c_race == "Human":
                                  print "1 and Human"
                          elif c_race == "Halfling":
                                  print "1 and Halfling"
                                  #WTF do people play Halflings?
                          elif c_race == "Gnome":
-                                 print "1 and Gnome"
-                                 #Gnomes are fugly Halflings
+                                 c_focus.append("Communication(Bargaining)")
                          elif c_race == "Dwarf":
                                  c_focus.append("Intelligence(Engineering)")
                          else:
@@ -184,15 +178,14 @@ def race_benefits():
                                  #print "1 and Orc"
                                  c_stats[8] = c_stats[8] +1
                          elif c_race == "Elf":
-                                 print "1 and Elf"
+                                 c_stats[6] = c_stats[6] +1
                          elif c_race == "Human":
                                  print "1 and Human"
                          elif c_race == "Halfling":
                                  print "1 and Halfling"
                                  #WTF do people play Halflings?
                          elif c_race == "Gnome":
-                                 print "1 and Gnome"
-                                 #Gnomes are fugly Halflings
+                                 c_stats[5] = c_stats[5] +1
                          elif c_race == "Dwarf":
                                  c_stats[7] = c_stats[7] +1
                          else:
@@ -221,7 +214,7 @@ def Orc():
         #add 1 Strength
         c_stats[7] = c_stats[7] + 1
         #Choose between two foci
-        r_focus = random.choice(["Constitution(Stamina)","Strength(Might"])
+        r_focus = random.choice(["Constitution(Stamina)","Strength(Might)"])
         c_focus.append(r_focus)
         #Add Darksight
         c_talent.append("Darksight")
@@ -311,21 +304,21 @@ def Elf():
         global c_language
         global c_race
         #Names first and last
-        f_name = random.choice(["Beska","Eldra","Grisha","Mag","Oota","Vol","Feld","Gar","Harsk","Kurg","Scag","Tor"])
-        l_name = random.choice(["Blackfire","Heartblood","Irontusk","Redaxe","Sunder"])
+        f_name = random.choice(["Alowar","Celemor","Elowen","Faerenel","Hereal","Lanathiel","Alagolin","Effoland","Kyriel","Larrendir","Melloran","Serren"])
+        l_name = random.choice(["Andurari","Arvanor","Derendil","Ellendi","Kellowan","Talloran"])
         c_name = f_name + " " + l_name
         #static additions for the race follow
-        #add 1 Strength
-        c_stats[7] = c_stats[7] + 1
+        #add 1 Dexterity
+        c_stats[3] = c_stats[3] + 1
         #Choose between two foci
-        r_focus = random.choice(["Constitution(Stamina)","Strength(Might"])
+        r_focus = random.choice(["Intelligence(Natural Lore)","Perception(Seeing)"])
         c_focus.append(r_focus)
         #Add Darksight
         c_talent.append("Darksight")
-        c_language.append("You can speak and read Orcish and the Common Tongue")
+        c_language.append("You can speak and read Elven and the Common Tongue")
         #Benefits table to follow
         race_benefits()
-        c_stats[9] = 10 + c_stats[3]
+        c_stats[9] = 12 + c_stats[3]
 
 def Gnome():
         global c_name
@@ -335,21 +328,21 @@ def Gnome():
         global c_language
         global c_race
         #Names first and last
-        f_name = random.choice(["Beska","Eldra","Grisha","Mag","Oota","Vol","Feld","Gar","Harsk","Kurg","Scag","Tor"])
-        l_name = random.choice(["Blackfire","Heartblood","Irontusk","Redaxe","Sunder"])
+        f_name = random.choice(["Alyce","Emma","Flora","Gale","Muriel","Ruby","Cog","Flinder","Garret","Hoster","Weldon","Yost"])
+        l_name = random.choice(["Gemspinner","Goldwarren","Minder","Rocktapper","Trundle","Underhill"])
         c_name = f_name + " " + l_name
         #static additions for the race follow
-        #add 1 Strength
-        c_stats[7] = c_stats[7] + 1
+        #add 1 Dex
+        c_stats[3] = c_stats[3] + 1
         #Choose between two foci
-        r_focus = random.choice(["Constitution(Stamina)","Strength(Might"])
+        r_focus = random.choice(["Constitution(Stamina)","Dexterity(Legerdemain)"])
         c_focus.append(r_focus)
         #Add Darksight
         c_talent.append("Darksight")
-        c_language.append("You can speak and read Orcish and the Common Tongue")
+        c_language.append("You can speak and read Gnomish and the Common Tongue")
         #Benefits table to follow
         race_benefits()
-        c_stats[9] = 10 + c_stats[3]
+        c_stats[9] = 8 + c_stats[3]
 
       
 
@@ -385,7 +378,8 @@ def Mage():
         global c_class
         roller = random.randint(1,6)
         c_stats[11] = 20 + c_stats[2] + roller
-        
+        s_talent = random.choice(["N: Chirurgy","N:Linguistics","N:Lore"])
+        c_talent.append(s_talent)
         
 def Rogue():
         global c_name
